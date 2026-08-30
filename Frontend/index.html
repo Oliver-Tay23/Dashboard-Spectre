@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Spectre</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <span class="brand">SPECTRE</span>
+    <a class="toggle" href="https://login.tailscale.com/admin/machines" target="_blank" rel="noopener">
+      <h2> Tailscale </h2>
+    </a>
+  </header>
+
+  <main class="grid">
+
+    <!-- Top-left: merged date/time + weather -->
+    <section class="card card--weather">
+      <p class="datetime-line" id="cardDateTime">Loading…</p>
+      <p id="weatherLocation" class="weather-location">Locating…</p>
+      <p id="weatherTemp" class="weather-temp">--°C</p>
+      <p id="weatherDesc" class="weather-desc">Loading…</p>
+    </section>
+
+    <!-- Top-middle: daily tasks -->
+    <section class="card">
+      <h2>Daily Tasks</h2>
+    </section>
+
+    <!-- Top-right: 2x2 grid of 4 link tiles, same footprint as one card -->
+    <div class="mini-grid">
+
+      <!-- Gmail -->
+      <a class="mini-card" href="https://mail.google.com" target="_blank" rel="noopener">
+        <h3>Gmail</h3>
+      </a>
+
+      <!-- Youtube -->
+      <a class="mini-card" href="https://www.youtube.com" target="_blank" rel="noopener">
+        <h3>YouTube</h3>
+      </a>
+
+      <!-- Crunchyroll -->
+      <a class="mini-card" href="https://www.crunchyroll.com" target="_blank" rel="noopener">
+        <h3>Crunchyroll</h3>
+      </a>
+
+      <!-- Claude -->
+      <a class="mini-card" href="https://claude.ai" target="_blank" rel="noopener">
+        <h3>Claude</h3>
+      </a>
+    </div>
+
+    <!-- My Hallam -->
+    <a class="card" href="https://blackboard.shu.ac.uk/" target="_blank" rel="noopener">
+      <h2>My Hallam</h2>
+    </a>
+
+    <!-- Proxmox -->
+    <a class="card" href="https://192.168.30.50:8006/" target="_blank" rel="noopener">
+      <h2>Proxmox</h2>
+    </a>
+
+    <!-- OPNSense-->
+    <a class="card" href="https://192.168.30.1/" target="_blank" rel="noopener">
+      <h2>OPNSense</h2>
+    </a>
+
+  </main>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
