@@ -1,4 +1,4 @@
-Spectre
+Spectre \n
 A personal homelab dashboard. FastAPI backend serving a static HTML/CSS/JS frontend, hosted on Proxmox and exposed via Cloudflare Tunnel. 
 Overview
 Spectre is a single-pane dashboard for quick access to homelab services and daily info — dark purple ghost-themed UI with amber/gold accents. 
