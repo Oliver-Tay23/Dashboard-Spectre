@@ -8,14 +8,15 @@ A personal homelab dashboard. FastAPI backend serving a static HTML/CSS/JS front
 Spectre is a single-pane dashboard for quick access to homelab services and daily info — dark purple ghost-themed UI with amber/gold accents. 
 
 ## Layout:
-Header: "SPECTRE" title + Tailscale button (links to Tailscale admin console)
-Top row: date/time + weather card, Daily Tasks card, 2x2 link tile grid (Gmail, YouTube, Crunchyroll, Claude)
-Bottom row: My Hallam (uni), Proxmox link, OPNsense link
+- Header: "SPECTRE" title + Tailscale button (links to Tailscale admin console)
+- Top row: date/time + weather card, Daily Tasks card, 2x2 link tile grid (Gmail, YouTube, Crunchyroll, Claude)
+- Bottom row: My Hallam (uni), Proxmox link, OPNsense link
+  
 ## Stack:
-Backend: Python, FastAPI
-Frontend: HTML/CSS/JS (static, served by the backend)
-Weather: Open-Meteo API, live geolocation, hourly refresh
-Hosting: Proxmox (likely LXC container), exposed externally via Cloudflare Tunnel (works around Starlink CGNAT)
+- Backend: Python, FastAPI
+- Frontend: HTML/CSS/JS (static, served by the backend)
+- Weather: Open-Meteo API, live geolocation, hourly refresh
+- Hosting: Proxmox (likely LXC container), exposed externally via Cloudflare Tunnel (works around Starlink CGNAT)
 
 ## Project Structure:
 Dashboard - Spectre/
