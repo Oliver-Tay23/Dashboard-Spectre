@@ -19,14 +19,16 @@ Spectre is a single-pane dashboard for quick access to homelab services and dail
 - Hosting: Proxmox (likely LXC container), exposed externally via Cloudflare Tunnel (works around Starlink CGNAT)
 
 ## Project Structure:  
+```
 Dashboard - Spectre/
-  ├── Backend/  
-  │   └── main.py  
-  └── Frontend/  
-      ├── index.html  
-      ├── script.js  
-      ├── style.css  
-      └── SpectreBackground.jpg  
+├── Backend/
+│   └── main.py
+└── Frontend/
+    ├── index.html
+    ├── script.js
+    ├── style.css
+    └── SpectreBackground.jpg
+```
     
 
 ## Related projects:
