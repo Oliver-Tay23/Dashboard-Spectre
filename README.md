@@ -20,13 +20,21 @@ Spectre is a single-pane dashboard for quick access to homelab services and dail
 
 ## Project Structure:
 Dashboard - Spectre/
+
 ├── Backend/
+
 │  └── main.py
+
 └── Frontend/
+
     ├── index.html
+    
     ├── script.js
+    
     ├── style.css
+    
     └── SpectreBackground.jpg
+    
 
 ## Related projects:
 Daily Tasks — separate FastAPI + HTML/CSS/JS project, own port, also hosted on the homelab Proxmox box. Spectre's Daily Tasks card links out to it in a new tab.
