@@ -20,13 +20,13 @@ Spectre is a single-pane dashboard for quick access to homelab services and dail
 
 ## Project Structure:
 Dashboard - Spectre/
-├── Backend/
-│   └── main.py
-└── Frontend/
-    ├── index.html
-    ├── script.js
-    ├── style.css
-    └── SpectreBackground.jpg
+├── Backend/  
+│   └── main.py  
+└── Frontend/  
+    ├── index.html  
+    ├── script.js  
+    ├── style.css  
+    └── SpectreBackground.jpg  
     
 
 ## Related projects:
