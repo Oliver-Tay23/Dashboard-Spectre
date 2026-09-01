@@ -1,6 +1,6 @@
 # Spectre 
 
-A personal homelab dashboard. FastAPI backend serving a static HTML/CSS/JS frontend, hosted on Proxmox and exposed via Cloudflare Tunnel. 
+A personal home lab dashboard. FastAPI backend serving a static HTML/CSS/JS frontend, hosted on Proxmox and accessible via Tailscale remotely. 
 
 
 ## Overview
@@ -9,15 +9,17 @@ Spectre is a single-pane dashboard for quick access to homelab services and dail
 
 ## Layout:
 - Header: "SPECTRE" title + Tailscale button (links to Tailscale admin console)
-- Top row: date/time + weather card, Daily Tasks card, 2x2 link tile grid (Gmail, YouTube, Crunchyroll, Claude)
+- Top row: merged date/time + weather card (live location, color-coded current temperature, forecast description), Link out to Domovoy, 2×2 link tile grid (Gmail, YouTube, Crunchyroll, Claude)
 - Bottom row: My Hallam (uni), Proxmox link, OPNsense link
   
 ## Stack:
 - Backend: Python, FastAPI
 - Frontend: HTML/CSS/JS (static, served by the backend)
 - Weather: Open-Meteo API, live geolocation, hourly refresh
-- Hosting: Proxmox (likely LXC container), exposed externally via Cloudflare Tunnel (works around Starlink CGNAT)
+- Hosting: Proxmox LXC container (Debian 12), running as a systemd service (Restart=always, enabled on boot), static LAN IP
+- Remote access: Tailscale — private access only, reachable from any device on the tailnet regardless of network
 
+  
 ## Project Structure:  
 ```
 Dashboard - Spectre/
@@ -35,5 +37,5 @@ Dashboard - Spectre/
 Task Tracker (Domovoy) — separate FastAPI + HTML/CSS/JS project, own port, also hosted on the homelab Proxmox box. Spectre's Daily Tasks card links out to it in a new tab.
 
 ## Status:
-Complete and hosted on Proxmox
+Complete and hosted on Proxmox — running continuously, accessible from anywhere via Tailscale.
 
