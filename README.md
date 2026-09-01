@@ -39,3 +39,5 @@ Task Tracker (Domovoy) — separate FastAPI + HTML/CSS/JS project, own port, als
 ## Status:
 Complete and hosted on Proxmox — running continuously, accessible from anywhere via Tailscale.
 
+## Domovoy
+https://github.com/Oliver-Tay23/Task-Tracker-Domovoy
