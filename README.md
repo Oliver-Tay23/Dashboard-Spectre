@@ -35,5 +35,5 @@ Dashboard - Spectre/
 Task Tracker (Domovoy) — separate FastAPI + HTML/CSS/JS project, own port, also hosted on the homelab Proxmox box. Spectre's Daily Tasks card links out to it in a new tab.
 
 ## Status:
-🚧 In progress — homelab dashboard project, not yet deployed.
+Complete and hosted on Proxmox
 
